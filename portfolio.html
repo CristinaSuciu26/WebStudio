@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-port">
+      <!--Header-->
+      <header class="header-section">
+        <nav>
+          <div class="header-container">
+            <div class="modal-btn">
+              <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button class="menu-toggle js-close-menu">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="content-menu">
+                <ul class="mobile-menu">
+                  <li>
+                    <a class="studio-mobile" href="index.html">Studio</a>
+                  </li>
+                  <li>
+                    <a class="portfolio-mobile" href="portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a class="info-contacts" href="contacts.html">Contacts</a>
+                  </li>
+                </ul>
+                <div class="info-mobile">
+                  <div class="contacts-mobile">
+                    <a class="info-mobile-tel" href="+1212-772-4150"
+                      >+1 212-772-4150</a
+                    >
+                    <a class="info-mobile-mail" href="mailto:info@devstudio.com"
+                      >info@devstudio.com
+                    </a>
+                  </div>
+                </div>
+                <div class="social-mobile">
+                  <a href="https://www.instagram.com">
+                    <svg class="icons-modal">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com/">
+                    <svg class="icons-modal">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.facebook.com/">
+                    <svg class="icons-modal">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com/">
+                    <svg class="icons-modal">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="top-section">
+              <div class="logo-section">
+                <p>Web<span class="studio-top">Studio</span></p>
+              </div>
+
+              <ul class="header-list">
+                <li class="studio-section">
+                  <a href="index.html">Studio</a>
+                </li>
+                <li class="portfolio-section current">
+                  <a class="portfolio-section" href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="contacts-section">
+                  <a class="contacts-section" href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+              <ul class="header-contacts">
+                <li>
+                  <a class="info-mail" href="mailto:info@devstudio.com">
+                    <svg height="16px" width="16px">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-envelope"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li>
+                  <a class="info-phone" href="+1212-772-4150">
+                    <svg height="16px" width="16px">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+                    +1 212-772-4150
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <hr />
+      <main>
+        <section class="button-section">
+          <!--Buttons section-->
+          <ul class="btn-section">
+            <li>
+              <button class="buttons">All</button>
+            </li>
+            <li>
+              <button class="buttons">Web-sites</button>
+            </li>
+            <li>
+              <button class="buttons">Apps</button>
+            </li>
+            <li>
+              <button class="buttons">Design</button>
+            </li>
+
+            <li>
+              <button class="buttons">Marketing</button>
+            </li>
+          </ul>
+
+          <!--Projects section-->
+          <section>
+            <div class="project-section">
+              <ul class="card-set">
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        src="images/technoduck.jpg"
+                        alt="Technoduck"
+                        width="370"
+                      />
+                      <div class="overlay">
+                        <p class="text-overlay">
+                          Technoduck is a state-of-the-art coronavirus
+                          distribution platform. Companies use this platform for
+                          digital espionage and attacks on competitors' secure
+                          servers.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Technoduck</h2>
+                      <span class="projects-name">Web-site</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/poster.jpg"
+                        alt="New Orlean vs Golden Star"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+                    <div class="project-container">
+                      <h2 class="projects">Poster New Orlean vs Golden Star</h2>
+                      <span class="projects-name">Design</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/seafood.jpg"
+                        alt="Seafood Restaurant"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Seafood Restaurant</h2>
+                      <span class="projects-name">Apps</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/projectprime.jpg"
+                        alt="Project Prime"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Project Prime</h2>
+                      <span class="projects-name">Marketing</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/projectboxes.jpg"
+                        alt="Project Boxes"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Project Boxes</h2>
+                      <span class="projects-name">Apps</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/inspnoborder.jpg"
+                        alt="Inspiration has no Borders"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Inspiration has no Borders</h2>
+                      <span class="projects-name">Web-site</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/limitededition.jpg"
+                        alt="Limited Edition"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Limited Edition</h2>
+                      <span class="projects-name">Design</span>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/projectlab.jpg"
+                        alt="Project LAB"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Project LAB</h2>
+                      <span class="projects-name">Marketing</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="card-item">
+                  <div class="border">
+                    <div class="overlay-section">
+                      <img
+                        width="100%"
+                        class="projects-images"
+                        src="images/growingbusiness.jpg"
+                        alt="Growing Business"
+                        width="370"
+                      />
+                      <div class="overlay"></div>
+                    </div>
+
+                    <div class="project-container">
+                      <h2 class="projects">Growing Business</h2>
+                      <span class="projects-name">Apps</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </main>
+      <!--Footer section-->
+
+      <footer class="footer-section">
+        <div class="footer-address">
+          <span class="footer-title"
+            >Web<span class="studio-bottom">Studio</span></span
+          >
+
+          <address class="address">
+            <br />
+            695 Park Ave, NY 10065, USA
+            <br />
+            <div class="address-contacts">
+              <a class="mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="phone-number" href="+1212-772-4150">+1 212-772-4150</a>
+            </div>
+          </address>
+        </div>
+        <div class="footer-icons-section">
+          <h3 class="contacts-title">Find us on</h3>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/">
+              <svg fill="gray" class="social-icons-footer">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </a>
+
+            <a href="https://twitter.com/">
+              <svg class="social-icons-footer">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/">
+              <svg class="social-icons-footer">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/">
+              <svg class="social-icons-footer">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="subscribe-form">
+          <div class="subscribe-label">
+            <span class="label-text">Subscribe to the newsletter</span>
+            <label class="form-label">
+              <input
+                type="text"
+                class="form-input"
+                name="username"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="subscribe-btn-container">
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg width="24px" height="24px">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-send"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </footer>
+    </div>
+
+    <script defer src="mobile-menu.js"></script>
+  </body>
+</html>

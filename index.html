@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./js/svg.js" />
+    <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="webstudio-container">
+      <div class="webstudio-content">
+        <header class="header-section">
+          <nav>
+            <div class="header-container">
+              <div class="modal-btn">
+                <button
+                  class="menu-toggle js-open-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div class="content-menu">
+                  <ul class="mobile-menu">
+                    <li>
+                      <a class="studio-mobile" href="index.html">Studio</a>
+                    </li>
+                    <li>
+                      <a class="portfolio-mobile" href="portfolio.html"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li>
+                      <a class="info-contacts" href="contacts.html">Contacts</a>
+                    </li>
+                  </ul>
+                  <div class="info-mobile">
+                    <div class="contacts-mobile">
+                      <a class="info-mobile-tel" href="+1212-772-4150"
+                        >+1 212-772-4150</a
+                      >
+                      <a
+                        class="info-mobile-mail"
+                        href="mailto:info@devstudio.com"
+                        >info@devstudio.com
+                      </a>
+                    </div>
+                  </div>
+                  <div class="social-mobile">
+                    <a href="https://www.instagram.com">
+                      <svg class="icons-modal">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com/">
+                      <svg class="icons-modal">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                      <svg class="icons-modal">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                    <a href="https://linkedin.com/">
+                      <svg class="icons-modal">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="top-section">
+                <div class="logo-section">
+                  <p>Web<span class="studio-top">Studio</span></p>
+                </div>
+
+                <ul class="header-list">
+                  <li class="studio-section current">
+                    <a href="index.html">Studio</a>
+                  </li>
+                  <li class="portfolio-section">
+                    <a class="portfolio-section" href="portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="contacts-section">
+                    <a class="contacts-section" href="contacts.html"
+                      >Contacts</a
+                    >
+                  </li>
+                </ul>
+                <ul class="header-contacts">
+                  <li>
+                    <a class="info-mail" href="mailto:info@devstudio.com">
+                      <svg height="16px" width="16px">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-envelope"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li>
+                    <a class="info-phone" href="+1212-772-4150">
+                      <svg height="16px" width="16px">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                      +1 212-772-4150
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="hero-section">
+            <div class="title-container">
+              <h1 class="header-title">
+                EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
+              </h1>
+              <button data-modal-open class="button">
+                Request our service
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!--Abilities section-->
+
+        <section class="ability-section">
+          <ul class="ability-list">
+            <li class="child-div">
+              <div class="icon-space">
+                <div class="icons-container">
+                  <svg class="icon-list">
+                    <use
+                      xlink:href="./images/icons.svg/symbol-defs.svg#icon-antenna"
+                      alt="My Happy SVG"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <h2 class="abilities-title">ATTENTION TO DETAILS</h2>
+              <p class="abilities-paragraph">
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </li>
+            <li class="child-div">
+              <div class="icon-space">
+                <div class="icons-container">
+                  <svg class="icon-list">
+                    <use
+                      xlink:href="./images/icons.svg/symbol-defs.svg#icon-clock"
+                      alt="My Happy SVG"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="abilities-title">PUNCTUALITY</h2>
+              <p class="abilities-paragraph">
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and deadlines.
+              </p>
+            </li>
+            <li class="child-div">
+              <div class="icon-space">
+                <div class="icons-container">
+                  <svg class="icon-list">
+                    <use
+                      xlink:href="./images/icons.svg/symbol-defs.svg#icon-diagram"
+                      alt="My Happy SVG"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="abilities-title">PLANNING</h2>
+              <p class="abilities-paragraph">
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </li>
+            <li class="child-div">
+              <div class="icon-space">
+                <div class="icons-container">
+                  <svg class="icon-list">
+                    <use
+                      xlink:href="./images/icons.svg/symbol-defs.svg#icon-astronaut"
+                      alt="My Happy SVG"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+
+              <h2 class="abilities-title">MODERN TECHNOLOGIES</h2>
+              <p class="abilities-paragraph">
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <!--What we do section-->
+
+        <div class="what-we-do-section">
+          <h2 class="details">What we do</h2>
+
+          <div class="details-section">
+            <div class="laptop-img">
+              <img src="images/laptop.jpg" alt="Laptop" width="370" />
+              <div class="desktop-apps">
+                <span class="apps-text">DESKTOP APPS</span>
+              </div>
+            </div>
+
+            <div class="phone-img">
+              <img src="images/phone.jpg" alt="Phone" width="370" />
+              <div class="mobile-apps">
+                <span class="apps-text">Mobile APPS</span>
+              </div>
+            </div>
+
+            <div class="tablet-img">
+              <img src="images/tablet.jpg" alt="Tablet" width="370" />
+              <div class="design-solutions">
+                <span class="apps-text">DESIGN SOLUTIONS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Our team section-->
+        <section class="team-section">
+          <h2 class="our-team-title">Our Team</h2>
+
+          <ul class="team-list">
+            <li class="team-card">
+              <div class="our-team">
+                <picture>
+                  <!--Desktop-->
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/christopherwalker-d.jpg,
+                      ./images/christopherwalker-d-2x.jpg
+                    "
+                  />
+                  <!--Tablet-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/christopherwalker-t.jpg,
+                      ./images/christopherwalker-t-2x.jpg
+                    "
+                  />
+                  <!--Mobile-->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/christopherwalker-m.jpg,
+                      ./images/christopherwalker-m-2x.jpg
+                    "
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="images/christopherwalker-m.jpg"
+                    alt="Christoper Walker"
+                  />
+                </picture>
+                <div class="team-container">
+                  <h2 class="team-names">Christopher Walker</h2>
+                  <span class="team-jobs">Product Designer</span>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://twitter.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-card">
+              <div class="our-team">
+                <picture>
+                  <!-- Desktop -->
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/kylieevans-d.jpg,
+                      ./images/kylieevans-d-2x.jpg
+                    "
+                  />
+                  <!-- Tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/kylieevans-t.jpg,
+                      ./images/kylieevans-t-2x.jpg
+                    "
+                  />
+                  <!-- Mobile -->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/kylieevans-m.jpg,
+                      ./images/kylieevans-m-2x.jpg
+                    "
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="images/kylieevans-m.jpg"
+                    alt="Kyle Evans"
+                  />
+                </picture>
+
+                <div class="team-container">
+                  <h2 class="team-names">Kylie Evans</h2>
+                  <span class="team-jobs">Frontend Developer</span>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <svg class="icon-style">
+                      <use
+                        xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                        alt="My Happy SVG"
+                      ></use>
+                    </svg>
+
+                    <a href="https://www.facebook.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-card">
+              <div class="our-team">
+                <picture>
+                  <!--Desktop-->
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/ryanharris-d.jpg,
+                      ./images/ryanharris-d-2x.jpg
+                    "
+                  />
+                  <!--Tablet-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/ryanharris-t.jpg,
+                      ./images/ryanharris-t-2x.jpg
+                    "
+                  />
+                  <!--Mobile-->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/ryanharris-m.jpg,
+                      ./images/ryanharris-m-2x.jpg
+                    "
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="images/ryanharris-m.jpg"
+                    alt="Ryan Harris"
+                  />
+                </picture>
+                <div class="team-container">
+                  <h2 class="team-names">Ryan Harris</h2>
+                  <span class="team-jobs">Marketing</span>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://twitter.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://linkedin.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team-card">
+              <div class="our-team">
+                <picture>
+                  <!--Desktop-->
+                  <source
+                    media="(min-width:1158px)"
+                    srcset="
+                      ./images/tylermoore-d.jpg,
+                      ./images/tylermoore-d-2x.jpg
+                    "
+                  />
+                  <!--Tablet-->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/tylermoore-t.jpg,
+                      ./images/tylermoore-t-2x.jpg
+                    "
+                  />
+                  <!--Mobile-->
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/tylermoore-m.jpg,
+                      ./images/tylermoore-m-2x.jpg
+                    "
+                  />
+
+                  <img
+                    class="team-photo"
+                    src="images/tylermoore-m.jpg"
+                    alt="Tyler Moore"
+                  />
+                </picture>
+                <div class="team-container">
+                  <h2 class="team-names">Tyler Moore</h2>
+                  <span class="team-jobs">UI Designer</span>
+
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://twitter.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/">
+                      <svg class="icon-style">
+                        <use
+                          xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                          alt="My Happy SVG"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Regular customers section -->
+        <section class="customers-section">
+          <h3 class="customer-title">Regular Customers</h3>
+          <div class="customer-icons">
+            <div class="customer-icons-space">
+              <svg class="logo-icons">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-logo1"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="customer-icons-space">
+              <svg class="logo-icons">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-logo2"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="customer-icons-space">
+              <svg class="logo-icons">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-logo3"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </div>
+            <div class="customer-icons-space">
+              <svg class="logo-icons">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-logo4"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </div>
+            <div class="customer-icons-space">
+              <svg class="logo-icons">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-logo5"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </div>
+            <div class="customer-icons-space">
+              <svg class="logo-icons">
+                <use
+                  xlink:href="./images/icons.svg/symbol-defs.svg#icon-logo6"
+                  alt="My Happy SVG"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <!--Footer section-->
+
+        <footer class="footer-section">
+          <div class="footer-address">
+            <span class="footer-title"
+              >Web<span class="studio-bottom">Studio</span></span
+            >
+
+            <address class="address">
+              <br />
+              695 Park Ave, NY 10065, USA
+              <br />
+              <div class="address-contacts">
+                <a class="mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+                <a class="phone-number" href="+1212-772-4150"
+                  >+1 212-772-4150</a
+                >
+              </div>
+            </address>
+          </div>
+          <div class="footer-icons-section">
+            <h3 class="contacts-title">Find us on</h3>
+            <div class="footer-icons">
+              <a href="https://www.instagram.com/">
+                <svg fill="gray" class="social-icons-footer">
+                  <use
+                    xlink:href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                    alt="My Happy SVG"
+                  ></use>
+                </svg>
+              </a>
+
+              <a href="https://twitter.com/">
+                <svg class="social-icons-footer">
+                  <use
+                    xlink:href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                    alt="My Happy SVG"
+                  ></use>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/">
+                <svg class="social-icons-footer">
+                  <use
+                    xlink:href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                    alt="My Happy SVG"
+                  ></use>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/">
+                <svg class="social-icons-footer">
+                  <use
+                    xlink:href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                    alt="My Happy SVG"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <form class="subscribe-form">
+            <div class="subscribe-label">
+              <span class="label-text">Subscribe to the newsletter</span>
+              <label class="form-label">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="username"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="subscribe-btn-container">
+              <button class="subscribe-btn" type="submit">
+                Subscribe
+                <svg width="24px" height="24px">
+                  <use
+                    xlink:href="./images/icons.svg/symbol-defs.svg#icon-send"
+                    alt="My Happy SVG"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </footer>
+      </div>
+    </section>
+
+    <script defer src="js/modal.js"></script>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <svg height="30px" width="30px" class="icon-close" data-modal-close>
+          <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+        </svg>
+
+        <!-- Form Section -->
+
+        <form class="form-modal">
+          <span class="intro-text"
+            >Leave your information and we'll call you back</span
+          >
+
+          <label class="input-form">
+            <span class="label">Name</span>
+            <input class="input-box" type="text" name="name" required />
+            <svg height="18px" width="18px" class="person-icon input-icon">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </label>
+
+          <label class="input-form">
+            <span class="label">Telephone</span>
+            <input class="input-box" type="tel" name="telephone" required />
+            <svg height="18px" width="18px" class="phone-icon input-icon">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="input-form">
+            <span class="label">E-mail</span>
+            <input class="input-box" type="email" name="email" required />
+            <svg height="18px" width="18px" class="envelope-icon input-icon">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <label class="comments-form">
+            <span class="label">Comments</span>
+            <textarea
+              class="comments-box"
+              name="comments"
+              rows="5"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+
+          <label class="checkbox-area">
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="agreement"
+              value="agree"
+              required
+            />
+            <svg class="icon-check" width="16" height="15">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-check"></use>
+            </svg>
+            <span class="agree-text">
+              I agree with the letter and accept the
+              <a
+                class="terms-link"
+                href="./terms.html"
+                target="_blank"
+                aria-label="Terms and Conditions"
+                >Terms and Conditions</a
+              >
+            </span>
+          </label>
+
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
