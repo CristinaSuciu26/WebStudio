@@ -88,8 +88,8 @@ a {
   float: right;
   border-radius: 19px;
   padding-top: 4px;
-  margin-top: 30px;
   margin-right: 118px;
+  margin-top: 42px;
 }
 .menu-container {
   display: none;
@@ -118,7 +118,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  padding-left: 23px;
+  padding-left: 67px;
 }
 
 .mobile-menu {
@@ -575,13 +575,13 @@ a {
   border-radius: 17px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  height: 581px;
-  height: auto;
+
+  height: 600px;
   margin: 0 auto;
   padding: 40px;
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  max-width: 528px;
+  max-width: 428px;
 }
 
 .is-hidden {
@@ -691,7 +691,7 @@ a {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 }
 
 .checkbox {
@@ -748,7 +748,8 @@ a {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 200px;
-  margin-left: 100px;
+  margin-left: 76px;
+  margin-bottom: 30px;
 }
 
 .send-button:hover,
@@ -785,6 +786,7 @@ a {
   }
   .hero-section {
     background: url(./images/header-img-t.png) no-repeat center;
+    background-size: cover;
   }
 
   .modal-btn {
