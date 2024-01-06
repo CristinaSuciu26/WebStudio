@@ -39,6 +39,7 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  overflow-x: hidden;
 }
 .webstudio-content {
   display: flex;
