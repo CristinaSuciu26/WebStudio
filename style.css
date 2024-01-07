@@ -53,7 +53,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .logo-section {
   font-family: Raleway;
@@ -938,12 +938,15 @@ a {
   .logo-section {
     font-size: 20px;
     padding-right: 161px;
+    margin-top: 3px;
   }
+
   .header-contacts {
     flex-direction: row;
     font-size: 16px;
     gap: 20px;
     padding-right: 50px;
+    margin-top: 3px;
   }
   .header-list {
     gap: 55px;
