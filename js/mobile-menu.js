@@ -3,17 +3,26 @@
   const openMenuBtn = document.querySelector(".js-open-menu");
   const closeMenuBtn = document.querySelector(".js-close-menu");
 
+  const bodyScrollClass = "body-scroll-disabled";
+
+  const disableScroll = () => {
+    document.body.classList.add(bodyScrollClass);
+  };
+
+  const enableScroll = () => {
+    document.body.classList.remove(bodyScrollClass);
+  };
+
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute("aria-expanded") === "true" || false;
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
+
     if (isMenuOpen) {
-      // Disable scrolling
-      document.body.style.overflow = "hidden";
+      disableScroll();
     } else {
-      // Enable scrolling
-      document.body.style.overflow = "auto";
+      enableScroll();
     }
   };
 
@@ -25,6 +34,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    enableScroll();
   });
 })();
